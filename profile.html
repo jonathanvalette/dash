@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="./assets/js/script.js"></script> 
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    
+</head>
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/1L71sPT5XKc');">
+  <nav
+  class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
+>
+  <div
+    class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+  >
+    <div
+      class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+    >
+      <a
+        class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+        href="./index.html"
+        >Dashboard</a
+      ><button
+        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+        type="button"
+        onclick="toggleNavbar('example-collapse-navbar')"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div
+      class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+      id="example-collapse-navbar"
+    >
+      <ul
+        class="flex flex-col lg:flex-row list-none lg:ml-auto items-center"
+      >
+
+        <li class="flex items-center">
+          <a href="planning.html">
+          <button
+            class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+            type="button"
+          >
+        
+            <i class="fas fa-arrow-alt-circle-down"></i> Planning
+       
+          </button>
+        </a>
+        </li>
+    
+        <li class="flex items-center">
+          <a href="profile.html">
+          <button
+            class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+            type="button"
+          >
+        
+            <i class="fas fa-arrow-alt-circle-down"></i> Presentation
+       
+          </button>
+        </a>
+        </li>
+          
+        <li class="flex items-center">
+          <a href="">
+          <button
+            class="text-white bg-blue-700 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+            type="button"
+        
+          >
+     
+            <i class="fas fa-arrow-alt-circle-down"></i> Outils
+        
+          </button>
+        </a>
+        </li>
+ 
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrao mx-auto my-32 lg:my-0" style="margin-top:6rem;">
+
+    <!-- Main Col -->
+    <div id="profile" class="w-full lg:w-2/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+      <div class="p-4 md:p-12 text-center lg:text-left" style="margin-top:6rem;">
+        <!-- Image for mobile view -->
+        <div class="block rounded-full shadow-xl mx-auto -mt-16 h-36 w-36 bg-cover bg-center" style="background-image: url('assets/img/unnamed.jpg')"></div>
+      <h1 class="text-3xl font-bold pt-8 lg:pt-0">Jonathan Valette</h1>
+        <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
+        <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
+          <svg class="h-4 fill-current text-teal-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
+          </svg> Formation web developer</p>
+        <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+        <h4 class="text-3xl font-bold pt-8 lg:pt-0" style="margin-top:1rem;">Objectif :</h4>
+        <p class="pt-6 text-sm">Acquérir les connaissances et les compétences necessaires pour exercer le metier de web developer (junior).</p>
+        <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+          <h4 class="text-3xl font-bold pt-8 lg:pt-0" style="margin-top:1rem;">Experiences :</h4>
+          <p class="pt-6 text-sm">J'ai été agent administratif au bureau du service national pendant 10 ans, administration en charge de l'
+            ancien service national et du nouveau appelé JAPD .</p>
+       
+      </div>
+    </div> <!-- End #Profile -->
+    <!--Img Col-->
+    <div class="w-full lg:w-3/5 hidden md:block">
+      <!-- Big profile image for side bar (desktop) -->
+      <img src="https://images.unsplash.com/photo-1525373698358-041e3a460346?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGV2fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" alt="placeholder image">
+      <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
+
+    </div>
+
+  </div>
+  
+</body>
+  
+</html>
