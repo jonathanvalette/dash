@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,11 +27,12 @@
     <div
       class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
     >
-      <a
-        class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-        href="./index.html"
-        >Dashboard</a
-      ><button
+    <a
+    class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+    href="./index.html"
+    >Dash</a>
+    <button
+     
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"
         onclick="toggleNavbar('example-collapse-navbar')"
@@ -48,43 +49,34 @@
       >
 
         <li class="flex items-center">
-          <a href="planning.html">
           <button
-            class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-            type="button"
-          >
-        
+          onclick="window.location.href='planning.html'"
+          class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+          type="button"
+        >  
             <i class="fas fa-arrow-alt-circle-down"></i> Planning
-       
           </button>
-        </a>
         </li>
     
         <li class="flex items-center">
-          <a href="profile.html">
           <button
-            class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-            type="button"
-          >
-        
+          onclick="window.location.href='profile.html'"
+          class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+          type="button"
+        >
             <i class="fas fa-arrow-alt-circle-down"></i> Presentation
        
           </button>
-        </a>
         </li>
           
         <li class="flex items-center">
-          <a href="outil.html">
           <button
-            class="text-white bg-blue-700 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-            type="button"
-        
+          onclick="window.location.href='outil.html'"
+          class="text-white bg-blue-700 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+          type="button"
           >
-     
-            <i class="fas fa-arrow-alt-circle-down"></i> Outils
-        
+          <i class="fas fa-arrow-alt-circle-down"></i> Outils
           </button>
-        </a>
         </li>
  
       </ul>
