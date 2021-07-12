@@ -13,12 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2/dist/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="./assets/js/script.js"></script> 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     
@@ -37,14 +32,15 @@
     <a
     class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
     href="./index.html"
-    >Dashboard</a>
+    >Planning</a>
     <button
-        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-        type="button"
-        onclick="toggleNavbar('example-collapse-navbar')"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
+    class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+    type="button"
+    onclick="toggleNavbar('example-collapse-navbar')"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+
     </div>
     <div
       class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
@@ -56,7 +52,7 @@
 
         <li class="flex items-center">
           <button
-          onclick="window.location.href='planning.html'"
+          onclick="window.location.href='index.html'"
           class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
           type="button"
         >  
@@ -64,6 +60,15 @@
           </button>
         </li>
     
+        <li class="flex items-center">
+          <button
+          onclick="window.location.href='outil.html'"
+          class="text-white bg-blue-700 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+          type="button"
+          >
+          <i class="fas fa-arrow-alt-circle-down"></i> Outils
+          </button>
+        </li>
         <li class="flex items-center">
           <button
           onclick="window.location.href='profile.html'"
@@ -74,93 +79,63 @@
        
           </button>
         </li>
-          
-        <li class="flex items-center">
-          <button
-          onclick="window.location.href='outil.html'"
-          class="text-white bg-blue-700 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-          type="button"
-          >
-          <i class="fas fa-arrow-alt-circle-down"></i> Outils
-          </button>
-        </li>
  
       </ul>
     </div>
   </div>
 </nav>
-<div class="flex justify-center items-center h-screen md:-mx-4">
-  <div class="w-full mx-20 bg-blue-100 bg-no-repeat bg-cover bg-center" style="background-image:url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwdG9vbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60)">
-    <h2 class="text-center font-bold text-3xl text-black pt-10">Outils</h2>            
-<div class="swiper-container w-100">
-<!-- Additional required wrapper -->
-<div class="swiper-wrapper">
-  <!-- Slides -->
-  <div class="swiper-slide px-20 py-6 flex items-center justify-center">
-    <div class="py-6">
-      <h3 class="text-center font-semibold text-black">CSS :  Cascading Style Sheets ressource <a class="hover:bg-blue-500" href="https://www.w3schools.com/w3css/defaulT.asp">W3C ici</a></h3>
-
-    <div class="flex justify-center py-4">
-      <img class="h-20 w-20 rounded-full" src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNzczN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="photo">
+<section class="py-12 px-4 mt-16">
+  <div class="flex flex-wrap -mx-4">
+    <div class="lg:w-1/2 px-4 mb-4 lg:mb-0">
+      <img class="rounded shadow" src="assets/img/outil1.png" alt="user image">
     </div>
-    <div class="text-sm flex justify-center text-black">CSS3</div>
+    <div class="lg:w-1/2 px-4">
+      <h2 class="text-4xl mb-4 font-semibold font-heading"><a href="https://www.w3schools.com/cssref/default.asp">Resource CSS</a></h2>
+
+      <h2 class="text-4xl mb-4 font-semibold font-heading"><a href="https://www.w3schools.com/cssref/default.asp">W3C CSS reference</a></h2>
+      <p class="mb-6 text-gray-400 leading-relaxed"><a href="https://www.w3schools.com/cssref/default.asp"> ressource css lien ici</a>.</p>
+    </div>
+
   </div>
-</div>
-<div class="swiper-slide px-20 flex items-center justify-center">
-    <div class="py-6">
-      <div class="flex jusify-center py-4 text-black text-center">
-        <h3 class="text-center font-semibold text-black">JS :  Javascript ressource <a class="hover:bg-blue-500" href="https://www.w3schools.com/js/default.asp">W3C ici</a></h3>
-      </div>
-      <div class="flex justify-center py-4">
-        <img class="h-20 w-20 rounded-full" src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNzczN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="photo">
-      </div>
-  <div class="text-sm flex justify-center text-black">JAVASCRIPT</div>
-</div>
-</div>
-<div class="swiper-slide px-20 flex items-center justify-center">
-  <div class="py-6">
-    <div class="flex jusify-center py-4 text-black text-center">
-      <h3 class="text-center font-semibold text-black">HTML :  HyperText Markup Language ressource <a class="hover:bg-blue-500" href="https://www.w3schools.com/html/default.asp">W3C ici</a></h3>
-    </div>
-    <div class="flex justify-center py-4">
-      <img class="h-20 w-20 rounded-full" src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNzczN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="photo">
-    </div>
-<div class="text-sm flex justify-center text-black">HTML5</div>
-</div>
-</div>
-  
-</div>
-<!-- If we need navigation buttons -->
-<div class="swiper-button-prev bg-white w-16 h-16 text-xs rounded-full text-green-500 mx-10"></div>
-<div class="swiper-button-next bg-white w-16 h-16 text-xs rounded-full text-green-500 mx-10"></div>
-<!-- If we need pagination -->
-<div class="swiper-pagination"></div>   
-</div>
-</div>
+<hr>
+<div class="flex flex-wrap -mx-4 mt-32">
+  <div class="lg:w-1/2 px-4 mb-4 lg:mb-0">
+    <img class="rounded shadow" src="assets/img/outil2.png" alt="user image">
+  </div>
+  <div class="lg:w-1/2 px-4">
+    <h2 class="text-4xl mb-4 font-semibold font-heading"><a href="https://www.w3schools.com/js/default.asp">Ressource Javascript</a></h2>
+    <h2 class="text-4xl mb-4 font-semibold font-heading"><a href="https://www.w3schools.com/js/default.asp">W3C JS reference</a></h2>
+    <p class="mb-6 text-gray-400 leading-relaxed"><a href="https://www.w3schools.com/js/default.asp"> ressource css lien ici</a>.</p>
+  </div>
+
 </div>
 
-<script>
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+<div class="flex flex-wrap -mx-4 mt-32">
+  <div class="lg:w-1/2 px-4 mb-4 lg:mb-0">
+    <img class="rounded shadow" src="assets/img/outil3.png" alt="user image">
+  </div>
+  <div class="lg:w-1/2 px-4">
+    <h2 class="text-4xl mb-4 font-semibold font-heading"><a href="https://www.w3schools.com/html/default.asp">Ressource HTML</a></h2>
+    <h2 class="text-4xl mb-4 font-semibold font-heading"><a href="https://www.w3schools.com/html/default.asp">W3C HTML reference</a></h2>
+    <p class="mb-6 text-gray-400 leading-relaxed"><a href="https://www.w3schools.com/html/default.asp"> ressource css lien ici</a>.</p>
+  </div>
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+</div>
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+<div class="flex flex-wrap -mx-4 mt-32">
+  <div class="lg:w-1/2 px-4 mb-4 lg:mb-0">
+    <img class="rounded shadow" src="assets/img/work.png" alt="user image">
+  </div>
+  <div class="lg:w-1/2 px-4">
+    <h2 class="text-4xl mb-4 font-semibold font-heading"><a href="https://fr-fr.workplace.com/">Ressource Workplace</a></h2>
+    <h2 class="text-4xl mb-4 font-semibold font-heading"><a href="https://fr-fr.workplace.com/">Outils communication, echange </a></h2>
+    <p class="mb-6 text-gray-400 leading-relaxed"><a href="https://fr-fr.workplace.com/"> ressource css lien ici</a>.</p>
+  </div>
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
-  </script>
+</div>
+
+</section>
+
+
 </body>
 </html>

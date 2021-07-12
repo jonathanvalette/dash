@@ -19,6 +19,7 @@
 </head>
 
 <body class="text-blueGray-700 antialiased">
+
   <nav
   class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
 >
@@ -31,14 +32,15 @@
     <a
     class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
     href="./index.html"
-    >Dashboard</a>
+    >Planning</a>
     <button
-        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-        type="button"
-        onclick="toggleNavbar('example-collapse-navbar')"
-      >
-        Dashboard
-      </button>
+    class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+    type="button"
+    onclick="toggleNavbar('example-collapse-navbar')"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+
     </div>
     <div
       class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
@@ -50,7 +52,7 @@
 
         <li class="flex items-center">
           <button
-          onclick="window.location.href='planning.html'"
+          onclick="window.location.href='#planning'"
           class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
           type="button"
         >  
@@ -60,22 +62,21 @@
     
         <li class="flex items-center">
           <button
+          onclick="window.location.href='outil.html'"
+          class="text-white bg-blue-700 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+          type="button"
+          >
+          <i class="fas fa-arrow-alt-circle-down"></i> Outils
+          </button>
+        </li>
+        <li class="flex items-center">
+          <button
           onclick="window.location.href='profile.html'"
           class="text-white bg-blue-500 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
           type="button"
         >
             <i class="fas fa-arrow-alt-circle-down"></i> Presentation
        
-          </button>
-        </li>
-          
-        <li class="flex items-center">
-          <button
-          onclick="window.location.href='outil.html'"
-          class="text-white bg-blue-700 active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-          type="button"
-          >
-          <i class="fas fa-arrow-alt-circle-down"></i> Outils
           </button>
         </li>
  
@@ -94,12 +95,12 @@
         <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
           <div class="sm:text-center lg:text-left" style="padding-top:5rem;">
             <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span class="block xl:inline">Dashboard to improve </span>
-              <span class="block text-indigo-600 xl:inline">online Course</span>
+              <span class="block xl:inline">Planning </span>
+      
             </h1>
           </div>
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+             Planning Formation Developpeur web.
             </p>
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
@@ -108,17 +109,13 @@
                 
               >
               <li class="flex items-center" style="padding-right: 0.5rem; padding-top: 0.5rem;">
-                <a href="planning.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                <a href="#planning" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                   Planning
                 </a>
               </li>
+ 
               <li class="flex items-center" style="padding-right: 0.5rem; padding-top: 0.5rem;">
-                <a href="profile.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                  Presentation
-                </a>
-              </li>
-              <li class="flex items-center" style="padding-right: 0.5rem; padding-top: 0.5rem;">
-                <a href="" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                <a href="outil.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                   Outils
                 </a>
               </li>
@@ -133,181 +130,100 @@
     </div>
   </div>
    
-  <section class="pb-20 bg-blueGray-200 -mt-24" style="margin-top: 3rem;">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-wrap">
-        <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-            <div
-              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg hover:bg-blue-600 hover:shadow-lg hover:border-transparent"
-            >
-              <div class="px-4 py-5 flex-auto">
-                <div
-                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                >
-                <span class="inline-block animate-bounce rounded-full p-4 bg-teal-400 text-white text-sm">   
-                <i class="fas fa-award"></i>
-                </span>
-                </div>
-                <h6 class="text-xl font-semibold">Planning</h6>
-                <p class="mt-2 mb-4 text-blueGray-500">
-                 Plannification des activité lie à la formation de developeur web
-                </p>
-              </div>
-            </div>
-          </div>
-        <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-            <div
-              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg hover:bg-blue-600 hover:shadow-lg hover:border-transparent"
-            >
-              <div class="px-4 py-5 flex-auto">
-                <div
-                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                >
-                <span class="inline-block animate-bounce rounded-full p-4 bg-teal-400 text-white text-sm">   
-                    <i class="fas fa-award"></i>
-                    </span>
-                </div>
-                <h6 class="text-xl font-semibold">Presentation</h6>
-                <p class="mt-2 mb-4 text-blueGray-500">
-                  Une courte presentation de mes objectif et de mon experience.
-                </p>
-              </div>
-            </div>
-          </div>
-        <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-          <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg hover:bg-blue-600 hover:shadow-lg hover:border-transparent"
-          >
-            <div class="px-4 py-5 flex-auto">
-              <div
-                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-              >
-              <span class="inline-block animate-bounce rounded-full p-4 bg-teal-400 text-white text-sm">   
-                <i class="fas fa-award"></i>
-                </span>
-              </div>
-              <h6 class="text-xl font-semibold">Outils</h6>
-              <p class="mt-2 mb-4 text-blueGray-500">
-               Presentation des outils utilise pour la formation de developeur web
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-wrap items-center mt-32">
-        <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-
-          <h3 class="text-3xl mb-2 font-semibold leading-normal">
-            Planning
-          </h3>
-          <p
-            class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
-          >
-          Plannification des activité lie à la formation de developeur web.
-          </p>
-          <p
-            class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600"
-          >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          </p>
-        
-        </div>
-        <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-          <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-          >
-            <img
-              alt="..."
-              src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGxhbm5pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              class="w-full align-middle rounded-t-lg"
-              style="margin-top:1.5rem;"
-            />
-           
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="relative py-20 mt-24">
+    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl" id="planning">
+      <span class="block xl:inline">Planning </span>
   </section>
 
-  <section class="relative py-20">
-    <div
-      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
-      style="transform: translateZ(0px)"
-    >
-    
-    </div>
-    <div class="container mx-auto px-4">
-      <div class="items-center flex flex-wrap">
-        <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-          <img
-            alt="..."
-            class="max-w-full rounded-lg shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-            src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fHdvcmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-          />
-        </div>
-        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-          <div class="md:pr-12">
-            <div
-              class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white" style="margin-top:3rem;"
-            >
-     
-              <img class="rounded-full border border-gray-100 shadow-sm min-w-max min-h-max transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" src="assets/img/unnamed.jpg" alt="user image"/>
-  
-            </div>
-            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-
-              <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Presentation
-              </h3>
-              <p
-                class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
-              >
-              Presentation objectif et experience.
-              </p>
-
-            
-            </div>
-          
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="pb-20 bg-blueGray-200 -mt-24">
+  <section class="pb-20 bg-blueGray-200 -mb -24">
    
-      <div class="flex flex-wrap items-center mt-32">
-        <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-
-          <h3 class="text-3xl mb-2 font-semibold leading-normal">
-            Outils
-          </h3>
-          <p
-            class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
-          >
-           Présentation des outils lié à la formation developpeur web
-          </p>
-          <p
-            class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600"
-          >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-          </p>
-  
-        </div>
-        <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-          <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-          >
-            <img
-              alt="..."
-              src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM2fHxodG1sNXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              class="w-full align-middle rounded-t-lg"
-            />
-           
+    <div class="container bg-gray-200 mx-auto w-full h-full">
+      <div class="relative wrap overflow-hidden p-10 h-full">
+        <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+        <!-- right timeline -->
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+          </div>
+          <div class="order-1 bg-blue-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Projet 1 Prendre en main formation</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">08 juillet au 16 juillet 2021.</p>
           </div>
         </div>
+    
+        <!-- left timeline -->
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+          </div>
+          <div class="order-1 bg-blue-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Projet 2 Integrer une maquette Web</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">16 au 31 juillet 2021.</p>
+          </div>
+        </div>
+        
+        <!-- right timeline -->
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+          </div>
+          <div class="order-1 bg-blue-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Projet 3 Dynamisez une page web avec des animations CSS</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">02 aout au 16 aout 2021.</p>
+          </div>
+        </div>
+    
+        <!-- left timeline -->
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+          </div>
+          <div class="order-1 bg-blue-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Projet 4 Optimisez un site web existant</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">17 aout au 31 aout 2021.</p>
+          </div>
+        </div>
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto font-semibold text-lg text-white">5</h1>
+          </div>
+          <div class="order-1 bg-blue-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Projet 5 Construisez un site e-commerce</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">01 septembre au 30 septembre 2021.</p>
+          </div>
+        </div>
+    
+        <!-- left timeline -->
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto text-white font-semibold text-lg">6</h1>
+          </div>
+          <div class="order-1 bg-blue-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Projet 6 Construisez une API sécurisée pour une application d'avis gastronomiques</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">01 octobre au 30 octobre 2021.</p>
+          </div>
+        </div>
+        
+        <!-- right timeline -->
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12"></div>
+          <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full">
+            <h1 class="mx-auto font-semibold text-lg text-white">7</h1>
+          </div>
+          <div class="order-1 bg-blue-500 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 class="mb-3 font-bold text-white text-xl">Projet 7 Créez un réseau social d’entreprise</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">1 novembre 2021 au 31 janvier 2022.</p>
+          </div>
+        </div>
+    
       </div>
+    </div>
 
   </section>
 
